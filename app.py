@@ -3,7 +3,7 @@ import pandas as pd
 from st_paywall import add_auth
 
 # 1. THE BOUNCER: This stops people until they pay
-add_auth(required=True)
+add_auth(required=False)
 
 st.title("🤖 Premium Robot Dashboard")
 st.write(f"Welcome back, **{st.session_state.user_email}**!")
